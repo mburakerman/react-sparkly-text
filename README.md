@@ -1,6 +1,6 @@
-# react-sparkly-text
+# ✨ react-sparkly-text
 
-## Docker setup
+## 🐳 Docker Setup
 
 1. Run this command to build the image on your local machine and start the container. You only need to run this command the first time, and whenever you make changes to docker-compose.yml.
 
