@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { styled } from 'styled-components';
+import { useEffect, useState } from "react";
+import { styled } from "styled-components";
 
 const DEFAULT_SIZE = 30;
 
@@ -12,7 +12,7 @@ type Props = {
 
 type SparkleSVGProps = {
   timeout?: number; // in ms
-} & Pick<Props, 'size'>;
+} & Pick<Props, "size">;
 
 const StyledContainer = styled.span`
   position: relative;
@@ -20,18 +20,18 @@ const StyledContainer = styled.span`
   font-weight: bolder;
 `;
 
-const StyledSparkleSVG = styled.svg<{ color: string; size: Props['size'] }>`
+const StyledSparkleSVG = styled.svg<{ color: string; size: Props["size"] }>`
   position: absolute;
   width: ${({ size }) => `${size}px`};
   height: ${({ size }) => `${size}px`};
   fill: ${({ color }) => color};
   opacity: 0;
-  animation: sparkle .5s ease-in-out infinite alternate;
+  animation: sparkle 0.5s ease-in-out infinite alternate;
   // generate random between -20 / 20
-  top:  ${() => `calc(${Math.floor(Math.random() * 41) - 20}px)`}; 
+  top: ${() => `calc(${Math.floor(Math.random() * 41) - 20}px)`};
   // generate random between -20 / 120
-  left: ${() => `calc(${Math.floor(Math.random() * 121) - 20}%)`}; 
- 
+  left: ${() => `calc(${Math.floor(Math.random() * 121) - 20}%)`};
+
   @keyframes sparkle {
     0% {
       opacity: 0;
@@ -46,7 +46,7 @@ const StyledSparkleSVG = styled.svg<{ color: string; size: Props['size'] }>`
 
 const SparkleSVG = ({ size, timeout = 1000 }: SparkleSVGProps) => {
   const [showSparkle, setShowSparkle] = useState(false);
-  const [color, setColor] = useState('#8BE9FD');
+  const [color, setColor] = useState("#8BE9FD");
 
   useEffect(() => {
     const interval = setInterval(() => {
