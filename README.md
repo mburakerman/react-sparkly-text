@@ -2,6 +2,8 @@
 
 ## 🐳 Docker Setup
 
+> 🗒️ `vite_docker` is our service name. you can replace it your service name
+
 1. Run this command to build the image on your local machine and start the container. You only need to run this command the first time, and whenever you make changes to docker-compose.yml.
 
 `docker-compose up --build --no-recreate -d`
@@ -29,3 +31,7 @@
 5. We have entered the container and now need to run the commands to install the Node packages and start the app.
 
 `yarn install && yarn dev`
+
+6. Stop container
+
+`docker stop vite_docker`
