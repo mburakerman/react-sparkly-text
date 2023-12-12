@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { SparklyText } from "./SparklyText";
+import styled from "styled-components";
 
 const meta = {
   title: "Example/SparklyText",
@@ -10,15 +11,19 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
+const StyledText = styled.span`
+  color: red;
+`;
+
 export const Default: Story = {
   args: {
-    children: "Lorem",
+    children: <StyledText>Lorem</StyledText>,
   },
 };
 
 export const WithSize: Story = {
   args: {
-    children: "Ipsum",
+    children: <StyledText>İpsum</StyledText>,
     size: 60,
   },
 };
