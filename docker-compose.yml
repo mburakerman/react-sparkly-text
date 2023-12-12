@@ -1,9 +1,9 @@
 version: "3.4"
 
 services:
-  vite_docker:
+  vite-app:
     image: node:alpine
-    container_name: vite_docker
+    container_name: vite-app-container
     entrypoint: /bin/sh
     ports:
       - 8000:8000

@@ -2,7 +2,7 @@
 
 ## 🐳 Docker Setup
 
-> 🗒️ `vite_docker` is our service name. you can replace it your service name
+> 🗒️ `vite_docker` is our container name. you can replace it with your container name
 
 1. Run this command to build the image on your local machine and start the container. You only need to run this command the first time, and whenever you make changes to docker-compose.yml.
 
@@ -24,7 +24,7 @@
 
 4. Just to clarify, we have a running container, but not the installed or running react app. For that, we need to log into the container and then execute the commands.
 
-`docker exec -it vite_docker sh`
+`docker exec -it vite-app-container sh`
 
 <br />
 
@@ -34,4 +34,4 @@
 
 6. Stop container
 
-`docker stop vite_docker`
+`docker stop vite-app-container`
