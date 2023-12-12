@@ -9,11 +9,21 @@ const meta = {
 } satisfies Meta<typeof SparklyText>;
 
 export default meta;
-type Story = StoryObj<typeof meta>;
+
+type Story = StoryObj<typeof SparklyText>;
 
 const StyledText = styled.span`
-  color: red;
+  color: purple;
 `;
+
+const TextWithSparklyText = () => {
+  return (
+    <p>
+      Lorem ipsum dolor sit amet, consectetur{" "}
+      <SparklyText>adipisicing</SparklyText> elit.
+    </p>
+  );
+};
 
 export const Default: Story = {
   args: {
@@ -21,7 +31,11 @@ export const Default: Story = {
   },
 };
 
-export const WithSize: Story = {
+export const WithText: Story = {
+  render: () => <TextWithSparklyText />,
+};
+
+export const WithSizeProp: Story = {
   args: {
     children: <StyledText>İpsum</StyledText>,
     size: 60,
