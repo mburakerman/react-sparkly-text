@@ -4,7 +4,7 @@ import { SparklyText } from "./SparklyText";
 import styled from "styled-components";
 
 const meta = {
-  title: "Example/SparklyText",
+  title: "Components/SparklyText",
   component: SparklyText,
 } satisfies Meta<typeof SparklyText>;
 
@@ -38,6 +38,6 @@ export const WithText: Story = {
 export const WithSizeProp: Story = {
   args: {
     children: <StyledText>İpsum</StyledText>,
-    size: 60,
+    size: 15,
   },
 };
