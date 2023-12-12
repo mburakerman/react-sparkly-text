@@ -7,9 +7,9 @@ services:
     entrypoint: /bin/sh
     ports:
       - 8000:8000
-    working_dir: /srv/app
+    working_dir: /app
     volumes:
       - type: bind
         source: ./
-        target: /srv/app
+        target: /app
     tty: true
