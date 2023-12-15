@@ -26,3 +26,8 @@
 4. Stop container
 
 `docker stop frontend`
+
+### Note:
+
+- We added `/app/node_modules`
+- With this configuration, `node_modules` directory from the host machine (specified by . in the volumes section) will be mounted to /app/node_modules inside the container. This allows your Docker container to access and use the dependencies
