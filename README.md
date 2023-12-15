@@ -6,14 +6,13 @@
 
 1. Run this command to build the image on your local machine and start the container. You only need to run this command the first time, and whenever you make changes to docker-compose.yml.
 
-`docker-compose up --build --no-recreate -d`
 `docker-compose build --no-cache`
 
 <br />
 
 2. From the second time, we can use
 
-`docker-compose up -d`
+`docker-compose up`
 
 <br />
 
