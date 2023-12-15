@@ -1,15 +1,14 @@
 version: "3.4"
 
 services:
-  vite-app:
-    image: node:alpine
-    container_name: vite-app-container
-    entrypoint: /bin/sh
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: frontend
     ports:
-      - 8000:8000
-    working_dir: /app
+      - 3000:3000
+    command: yarn dev
     volumes:
-      - type: bind
-        source: ./
-        target: /app
+      - .:/app
     tty: true
