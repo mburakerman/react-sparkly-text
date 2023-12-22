@@ -5,7 +5,9 @@ import { render, screen } from "@testing-library/react";
 describe("ReactSparklyText", () => {
   it("renders properly", () => {
     render(<ReactSparklyText>test</ReactSparklyText>);
-    const element = screen.getByTestId((id) => id.startsWith("sparkly-text"));
+    const element = screen.getByTestId((id) =>
+      id.startsWith("react-sparkly-text")
+    );
     expect(element).toBeInTheDocument();
   });
 });

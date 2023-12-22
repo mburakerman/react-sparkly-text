@@ -57,7 +57,7 @@ export const ReactSparklyText = ({ children, size = DEFAULT_SIZE }: Props) => {
   return (
     <span
       className="react-sparkly-text__container-x"
-      data-testid={`sparkly-text-${children.toString()}`}
+      data-testid={`react-sparkly-text`}
     >
       {children}
       <SparkleSVG size={size} />
