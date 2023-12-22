@@ -2,15 +2,6 @@ import styled from "styled-components";
 import { SparklyText } from "./SparklyText";
 import { FaGithub } from "react-icons/fa";
 
-const StyledSparkleSVG = styled.svg`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  margin-top: 5rem;
-  fill: #8be9fd;
-`;
-
 const StyledTitle = styled.h1`
   text-align: center;
   font-size: 30px;
@@ -49,9 +40,6 @@ const StyledGithubButton = styled.a`
 function App() {
   return (
     <>
-      <StyledSparkleSVG width="50" height="50" viewBox="0 0 1200 1200">
-        <path d="m611.04 866.16c17.418-61.09 50.25-116.68 95.352-161.42 45.098-44.742 100.94-77.133 162.17-94.062l38.641-10.68-38.641-10.68c-61.227-16.93-117.07-49.32-162.17-94.062-45.102-44.738-77.934-100.33-95.352-161.42l-11.039-38.641-11.039 38.641c-17.418 61.09-50.25 116.68-95.352 161.42-45.098 44.742-100.94 77.133-162.17 94.062l-38.641 10.68 38.641 10.68c61.227 16.93 117.07 49.32 162.17 94.062 45.102 44.738 77.934 100.33 95.352 161.42l11.039 38.641z" />
-      </StyledSparkleSVG>
       <StyledTitle>
         <SparklyText>
           <span>react-sparkly-text</span>
