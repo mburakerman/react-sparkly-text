@@ -39,7 +39,7 @@ const $141021c3fc77ba72$export$d9234916226e0cf4 = ({ children: children, size: s
     const generateRandomTimeout = ()=>Math.floor(Math.random() * 1000 + 2200);
     return /*#__PURE__*/ (0, $3Qau6$jsxs)("span", {
         className: "react-sparkly-text__container-x",
-        "data-testid": `sparkly-text-${children.toString()}`,
+        "data-testid": `react-sparkly-text`,
         children: [
             children,
             /*#__PURE__*/ (0, $3Qau6$jsx)($141021c3fc77ba72$var$SparkleSVG, {
