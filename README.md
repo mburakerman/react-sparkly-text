@@ -34,10 +34,8 @@ import ReactSparklyText from "react-sparkly-text";
 
 Licensed under MIT
 
-````
-
 ### 📖 Storybook
 
 ```js
 yarn storybook
-````
+```
