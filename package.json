@@ -27,7 +27,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "build:docs": "yarn build && yarn build-storybook",
-    "publish": "yarn build:package && yarn build:docs && npm publish"
+    "publish": "yarn build:package && yarn build:docs"
   },
   "devDependencies": {
     "@parcel/packager-ts": "^2.10.3",
