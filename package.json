@@ -23,7 +23,7 @@
     "build:package": "parcel build src/components/SparklyText.tsx",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build -o ./docs/storybook && touch ././docs/storybook/.nojekyll",
+    "build-storybook": "storybook build -o ./docs/storybook && touch ./docs/storybook/.nojekyll",
     "test": "vitest run",
     "test:watch": "vitest",
     "build:docs": "yarn build && yarn build-storybook"
