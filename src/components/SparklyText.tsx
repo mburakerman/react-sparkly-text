@@ -51,6 +51,9 @@ const SparkleSVG = ({ size, timeout = 1000 }: SparkleSVGProps) => {
 };
 
 export const SparklyText = ({ children, size = DEFAULT_SIZE }: Props) => {
+  const generateRandomTimeout = () =>
+    Math.floor(Math.random() * (3000 - 2200) + 2200);
+
   return (
     <span
       className="sparkly-text__container-x"
@@ -58,9 +61,9 @@ export const SparklyText = ({ children, size = DEFAULT_SIZE }: Props) => {
     >
       {children}
       <SparkleSVG size={size} />
-      <SparkleSVG size={size} timeout={2240} />
-      <SparkleSVG size={size} timeout={2490} />
-      <SparkleSVG size={size} timeout={2889} />
+      <SparkleSVG size={size} timeout={generateRandomTimeout()} />
+      <SparkleSVG size={size} timeout={generateRandomTimeout()} />
+      <SparkleSVG size={size} timeout={generateRandomTimeout()} />
     </span>
   );
 };
