@@ -1,6 +1,6 @@
 {
   "name": "react-sparkly-text",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "author": "mburakerman",
   "type": "module",
   "types": "build/index.d.ts",
