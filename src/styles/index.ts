@@ -5,13 +5,13 @@ export const GlobalStyle = createGlobalStyle`
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
-    color: #282A36;
+    color: #fff;
     font-synthesis: none;
   }
 
   body {
     margin: 15px;
-    background: #f2f2f2;
+    background: #272a36;
     font-size: 16px;
     font-family: 'Nunito', serif;
    }

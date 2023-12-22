@@ -26,10 +26,10 @@ const StyledGithubButton = styled.a`
   text-decoration: none;
   border-radius: 8px;
   font-size: 18px;
-  transition: all 0.5s ease;
+  transition: all 0.4s;
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.7);
   }
 
   svg {
