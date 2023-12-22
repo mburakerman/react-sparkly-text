@@ -18,7 +18,7 @@ import ReactSparklyText from "react-sparkly-text";
 ```
 
 ```html
- <p>Lorem ipsum dolor <ReactSparklyText>sparkly text</ReactplosiveModal> sit amet.
+ <p>Lorem ipsum dolor <ReactSparklyText>sparkly text</ReactplosiveModal> sit amet.</p>
 ```
 
 ## ⚙️ Props
