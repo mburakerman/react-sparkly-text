@@ -1,13 +1,21 @@
 {
   "name": "react-sparkly-text",
-  "private": true,
   "version": "0.0.1",
+  "author": "mburakerman",
   "type": "module",
   "types": "build/index.d.ts",
   "files": [
     "build/"
   ],
   "main": "build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mburakerman/react-sparkly-text.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mburakerman/react-sparkly-text/issues"
+  },
+  "homepage": "https://github.com/mburakerman/react-sparkly-text",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
