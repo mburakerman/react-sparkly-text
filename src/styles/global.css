@@ -21,6 +21,20 @@ body {
   font-weight: 500;
 }
 
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 0 auto;
+  max-width: max-content;
+}
+@media screen and (max-width: 920px) {
+  .button-container {
+    flex-direction: column;
+  }
+}
+
 .github-button {
   margin: 0 auto;
   width: max-content;
