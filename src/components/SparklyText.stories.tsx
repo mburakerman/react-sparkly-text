@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from "@storybook/react";
-
 import { SparklyText } from "./SparklyText";
 
 const meta = {
@@ -11,14 +10,6 @@ export default meta;
 
 type Story = StoryObj<typeof SparklyText>;
 
-const TextWithSparklyText = () => {
-  return (
-    <p>
-      Lorem ipsum dolor sit amet, consectetur <span>adipisicing</span> elit.
-    </p>
-  );
-};
-
 export const Default: Story = {
   args: {
     children: <span>Lorem</span>,
@@ -26,12 +17,12 @@ export const Default: Story = {
 };
 
 export const WithText: Story = {
-  render: () => <TextWithSparklyText />,
-};
-
-export const WithSizeProp: Story = {
+  render: (_args) => (
+    <div>
+      Lorem ipsum dolor <SparklyText size={10}>sit</SparklyText> amet.
+    </div>
+  ),
   args: {
-    children: <span>İpsum</span>,
-    size: 15,
+    children: <span>Lorem</span>,
   },
 };
