@@ -52,7 +52,7 @@ const SparkleSVG = ({ size, timeout = 1000 }: SparkleSVGProps) => {
 
 export const SparklyText = ({ children, size = DEFAULT_SIZE }: Props) => {
   const generateRandomTimeout = () =>
-    Math.floor(Math.random() * (3000 - 2200) + 2200);
+    Math.floor(Math.random() * (3200 - 2200) + 2200);
 
   return (
     <span
