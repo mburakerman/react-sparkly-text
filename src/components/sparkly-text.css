@@ -1,10 +1,17 @@
-.sparkly-text__container-x {
+.react-sparkly-text__container-x {
   position: relative;
   width: max-content;
   font-weight: bolder;
 }
 
-@keyframes sparkly-text-sparkle-x {
+.react-sparkly-text__sparkle-svg-x {
+  position: absolute;
+  opacity: 0;
+  animation: react-sparkly-text-sparkle-animation-x 0.5s ease-in-out infinite
+    alternate;
+}
+
+@keyframes react-sparkly-text-sparkle-animation-x {
   0% {
     opacity: 0;
     transform: scale(0.25);
@@ -13,10 +20,4 @@
     opacity: 1;
     transform: rotateZ(30deg) scale(1);
   }
-}
-
-.sparkly-text__sparkle-svg-x {
-  position: absolute;
-  opacity: 0;
-  animation: sparkly-text-sparkle-x 0.5s ease-in-out infinite alternate;
 }
