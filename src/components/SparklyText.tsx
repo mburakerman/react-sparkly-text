@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./styles/sparkly-text.css";
+import "./sparkly-text.css";
 
 const DEFAULT_SIZE = 30;
 

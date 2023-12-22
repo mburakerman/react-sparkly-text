@@ -1,4 +1,4 @@
-import { SparklyText } from "./SparklyText";
+import { SparklyText } from "./components/SparklyText";
 
 function App() {
   return (
