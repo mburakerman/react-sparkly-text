@@ -11,6 +11,11 @@
 npm i react-sparkly-text
 ```
 
+### 👀 Demo and Storybook
+
+<a href="https://mburakerman.github.io/react-sparkly-text/" target="_blank">Demo</a>
+<a href="https://mburakerman.github.io/react-sparkly-text/storybook" target="_blank">Storybook</a>
+
 ## 🪡 Usage
 
 ```js
@@ -33,9 +38,3 @@ import ReactSparklyText from "react-sparkly-text"
 ## ©️ License
 
 Licensed under MIT
-
-### 📖 Storybook
-
-```js
-yarn storybook
-```
