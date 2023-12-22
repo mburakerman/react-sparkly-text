@@ -3,10 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "types": "build/index.d.ts",
+  "files": [
+    "build/"
+  ],
+  "main": "build/index.js",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "build:parcel": "parcel build src/SparklyText.tsx",
+    "build:package": "parcel build src/SparklyText.tsx",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
