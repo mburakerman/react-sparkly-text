@@ -17,7 +17,7 @@ export const Default: Story = {
 };
 
 export const WithText: Story = {
-  render: (_args) => (
+  render: () => (
     <div>
       Lorem ipsum dolor <SparklyText size={10}>sit</SparklyText> amet.
     </div>
