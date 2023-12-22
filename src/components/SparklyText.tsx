@@ -53,7 +53,7 @@ const SparkleSVG = ({ size, timeout = 1000 }: SparkleSVGProps) => {
 export const SparklyText = ({ children, size = DEFAULT_SIZE }: Props) => {
   return (
     <span
-      className="sparkly-text__container-x "
+      className="sparkly-text__container-x"
       data-testid={`sparkly-text-${children.toString()}`}
     >
       {children}
