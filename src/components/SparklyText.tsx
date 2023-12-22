@@ -7,7 +7,7 @@ type TextElement = React.ReactElement<{ children: React.ReactNode }>;
 
 type Props = {
   children: string | TextElement | Array<string | TextElement>;
-  size?: number; // Size in pixels
+  size?: number; // size in pixels
 };
 
 type SparkleSVGProps = {
