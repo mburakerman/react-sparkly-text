@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./sparkly-text.css";
+import "./react-sparkly-text.css";
 
 const DEFAULT_SIZE = 30;
 
@@ -50,7 +50,7 @@ const SparkleSVG = ({ size, timeout = 1000 }: SparkleSVGProps) => {
   );
 };
 
-export const SparklyText = ({ children, size = DEFAULT_SIZE }: Props) => {
+export const ReactSparklyText = ({ children, size = DEFAULT_SIZE }: Props) => {
   const generateRandomTimeout = () =>
     Math.floor(Math.random() * (3200 - 2200) + 2200);
 

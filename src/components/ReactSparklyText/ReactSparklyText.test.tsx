@@ -1,10 +1,10 @@
 import { describe, it, expect } from "vitest";
-import { SparklyText } from "./SparklyText";
+import { ReactSparklyText } from "./ReactSparklyText";
 import { render, screen } from "@testing-library/react";
 
-describe("SparklyText", () => {
+describe("ReactSparklyText", () => {
   it("renders properly", () => {
-    render(<SparklyText>test</SparklyText>);
+    render(<ReactSparklyText>test</ReactSparklyText>);
     const element = screen.getByTestId((id) => id.startsWith("sparkly-text"));
     expect(element).toBeInTheDocument();
   });

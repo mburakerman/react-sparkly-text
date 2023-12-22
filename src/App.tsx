@@ -1,12 +1,12 @@
-import { SparklyText } from "./components/SparklyText";
+import { ReactSparklyText } from "./components/ReactSparklyText/ReactSparklyText";
 
 function App() {
   return (
     <>
       <h1 className="title">
-        <SparklyText>
+        <ReactSparklyText>
           <span>react-sparkly-text</span>
-        </SparklyText>
+        </ReactSparklyText>
       </h1>
 
       <div className="button-container">

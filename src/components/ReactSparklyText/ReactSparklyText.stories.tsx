@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { SparklyText } from "./SparklyText";
+import { ReactSparklyText } from "./ReactSparklyText";
 
 const meta = {
-  title: "Components/SparklyText",
-  component: SparklyText,
-} satisfies Meta<typeof SparklyText>;
+  title: "Components/ReactSparklyText",
+  component: ReactSparklyText,
+} satisfies Meta<typeof ReactSparklyText>;
 
 export default meta;
 
-type Story = StoryObj<typeof SparklyText>;
+type Story = StoryObj<typeof ReactSparklyText>;
 
 export const Default: Story = {
   args: {
@@ -19,7 +19,7 @@ export const Default: Story = {
 export const WithText: Story = {
   render: () => (
     <div>
-      Lorem ipsum dolor <SparklyText size={10}>sit</SparklyText> amet.
+      Lorem ipsum dolor <ReactSparklyText size={10}>sit</ReactSparklyText> amet.
     </div>
   ),
   args: {
