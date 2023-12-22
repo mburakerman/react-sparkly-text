@@ -11,7 +11,7 @@
 npm i react-sparkly-text
 ```
 
-### 👀 Demo and Storybook
+### 👀 Demo & Storybook
 
 <a href="https://mburakerman.github.io/react-sparkly-text/" target="_blank">Demo</a>
 <a href="https://mburakerman.github.io/react-sparkly-text/storybook" target="_blank">Storybook</a>
