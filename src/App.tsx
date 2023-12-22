@@ -6,7 +6,7 @@ const StyledTitle = styled.h1`
   text-align: center;
   font-size: 30px;
   margin-bottom: 4rem;
-  margin-top: 0;
+  margin-top: 100px;
   font-weight: 500;
 `;
 
@@ -29,7 +29,7 @@ const StyledGithubButton = styled.a`
   transition: all 0.5s ease;
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.1);
   }
 
   svg {
