@@ -55,6 +55,7 @@ const SparkleSVG = ({ size, timeout = 1000 }: SparkleSVGProps) => {
     }, timeout);
 
     return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   if (!showSparkle) {
@@ -69,7 +70,7 @@ const SparkleSVG = ({ size, timeout = 1000 }: SparkleSVGProps) => {
 
 export const SparklyText = ({ children, size = DEFAULT_SIZE }: Props) => {
   return (
-    <StyledContainer>
+    <StyledContainer data-testid={`sparkly-text-${children.toString()}`}>
       {children}
       <SparkleSVG size={size} />
       <SparkleSVG size={size} timeout={2240} />
