@@ -17,7 +17,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "build:docs": "yarn build && yarn build-storybook"
   },
   "dependencies": {
     "react": "^18.2.0",
