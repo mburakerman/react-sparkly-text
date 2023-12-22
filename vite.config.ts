@@ -21,6 +21,10 @@ export default defineConfig({
     }),
     macrosPlugin(),
   ],
+  base: "",
+  build: {
+    outDir: "docs",
+  },
   server: {
     host: true,
     port: 3000,
