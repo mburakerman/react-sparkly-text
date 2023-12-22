@@ -26,7 +26,7 @@ import ReactSparklyText from "react-sparkly-text";
 ```js
 {
   children: string | TextElement | Array<string | TextElement>;
-  size?: number; // Size in pixels
+  size?: number; // sparkle size in pixels. default is 30
 };
 ```
 
