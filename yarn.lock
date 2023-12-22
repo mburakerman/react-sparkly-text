@@ -3469,7 +3469,7 @@ babel-plugin-polyfill-regenerator@^0.5.3:
 
 babel-plugin-styled-components@^2.1.4:
   version "2.1.4"
-  resolved "https://registry.npmjs.org/babel-plugin-styled-components/-/babel-plugin-styled-components-2.1.4.tgz"
+  resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-2.1.4.tgz#9a1f37c7f32ef927b4b008b529feb4a2c82b1092"
   integrity sha512-Xgp9g+A/cG47sUyRwwYxGM4bR/jDRg5N6it/8+HxCnbT5XNKSKDT9xm4oag/osgqjC2It/vH0yXsomOG6k558g==
   dependencies:
     "@babel/helper-annotate-as-pure" "^7.22.5"
@@ -7783,7 +7783,7 @@ vite-node@1.1.0:
 
 vite-plugin-babel-macros@^1.0.6:
   version "1.0.6"
-  resolved "https://registry.npmjs.org/vite-plugin-babel-macros/-/vite-plugin-babel-macros-1.0.6.tgz"
+  resolved "https://registry.yarnpkg.com/vite-plugin-babel-macros/-/vite-plugin-babel-macros-1.0.6.tgz#d05cee3c38c620ccb534e38f412fdd899a3365b5"
   integrity sha512-7cCT8jtu5UjpE46pH7RyVltWw5FbhDAtQliZ6QGqRNR5RUZKdAsB0CDjuF+VBoDpnl0KuESPu22SoNqXRYYWyQ==
   dependencies:
     "@babel/core" "^7.17.7"

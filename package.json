@@ -14,12 +14,10 @@
     "test:watch": "vitest"
   },
   "dependencies": {
-    "babel-plugin-styled-components": "^2.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
-    "styled-components": "^6.1.1",
-    "vite-plugin-babel-macros": "^1.0.6"
+    "styled-components": "^6.1.1"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.6.4",
@@ -37,6 +35,7 @@
     "@typescript-eslint/eslint-plugin": "^6.13.1",
     "@typescript-eslint/parser": "^6.13.1",
     "@vitejs/plugin-react": "^4.2.0",
+    "babel-plugin-styled-components": "^2.1.4",
     "eslint": "^8.55.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
