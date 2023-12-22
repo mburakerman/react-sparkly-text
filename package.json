@@ -1,6 +1,6 @@
 {
   "name": "react-sparkly-text",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "author": "mburakerman",
   "type": "module",
   "types": "build/index.d.ts",
@@ -28,10 +28,6 @@
     "test:watch": "vitest",
     "build:docs": "yarn build && yarn build-storybook"
   },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
   "devDependencies": {
     "@parcel/packager-ts": "^2.10.3",
     "@parcel/transformer-typescript-types": "^2.10.3",
@@ -57,6 +53,8 @@
     "eslint-plugin-storybook": "^0.6.15",
     "jsdom": "^23.0.1",
     "parcel": "^2.10.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "storybook": "^7.6.4",
     "typescript": "^5.2.2",
     "vite": "^5.0.4",
@@ -65,7 +63,8 @@
     "yarn": "^1.22.21"
   },
   "peerDependencies": {
-    "react": "^16.8.0 || ^17 || ^18"
+    "react": ">=16",
+    "react-dom": ">=16"
   },
   "resolutions": {
     "jackspeak": "2.1.1"
