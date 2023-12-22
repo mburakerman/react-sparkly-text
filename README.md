@@ -14,7 +14,7 @@ npm i react-sparkly-text
 ## 🪡 Usage
 
 ```js
-import ReactSparklyText from "react-sparkly-text";
+import ReactSparklyText from "react-sparkly-text"
 ```
 
 ```html
