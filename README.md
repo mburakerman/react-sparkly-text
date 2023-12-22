@@ -30,6 +30,15 @@ import ReactSparklyText from "react-sparkly-text";
 };
 ```
 
+```
+
 ## ©️ License
 
 Licensed under MIT
+```
+
+### 📖 Storybook
+
+```js
+yarn storybook
+```
