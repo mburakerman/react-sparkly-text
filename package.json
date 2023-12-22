@@ -1,6 +1,6 @@
 {
   "name": "react-sparkly-text",
-  "version": "0.0.2",
+  "version": "0.0.21",
   "author": "mburakerman",
   "type": "module",
   "types": "build/index.d.ts",
@@ -63,6 +63,9 @@
     "vite-plugin-babel-macros": "^1.0.6",
     "vitest": "^1.1.0",
     "yarn": "^1.22.21"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17 || ^18"
   },
   "resolutions": {
     "jackspeak": "2.1.1"
