@@ -14,7 +14,7 @@ npm i react-sparkly-text
 ## 🪡 Usage
 
 ```js
-import { ReactSparklyText } from 'react-sparkly-text'
+import { ReactSparklyText } from "react-sparkly-text"
 ```
 
 ```html
@@ -24,7 +24,9 @@ import { ReactSparklyText } from 'react-sparkly-text'
 ## ⚙️ Props
 
 ```js
-{
+type TextElement = React.ReactElement<{ children: React.ReactNode }>;
+
+type Props = {
   children: string | TextElement | Array<string | TextElement>;
   size?: number; // sparkle size in pixels. default is 30
 };

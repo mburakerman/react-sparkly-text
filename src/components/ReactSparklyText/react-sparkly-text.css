@@ -7,8 +7,7 @@
 .react-sparkly-text__sparkle-svg-x {
   position: absolute;
   opacity: 0;
-  animation: react-sparkly-text-sparkle-animation-x 0.5s ease-in-out infinite
-    alternate;
+  animation: react-sparkly-text-sparkle-animation-x 0.5s ease-in-out infinite alternate;
 }
 
 @keyframes react-sparkly-text-sparkle-animation-x {
@@ -17,6 +16,14 @@
     transform: scale(0.25);
   }
   100% {
+    opacity: 1;
+    transform: rotateZ(50deg) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .react-sparkly-text__sparkle-svg-x {
+    animation: none;
     opacity: 1;
     transform: rotateZ(30deg) scale(1);
   }

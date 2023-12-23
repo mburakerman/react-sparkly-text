@@ -1,5 +1,8 @@
-import { useEffect, useState } from "react";
 import "./react-sparkly-text.css";
+
+import { useEffect, useState } from "react";
+
+import { useReducedMotion } from "../../hooks/useReducedMotion";
 
 const DEFAULT_SIZE = 30;
 
@@ -17,20 +20,25 @@ type SparkleSVGProps = {
 const SparkleSVG = ({ size, timeout = 1000 }: SparkleSVGProps) => {
   const [showSparkle, setShowSparkle] = useState(false);
   const [color, setColor] = useState("#8BE9FD");
+  const { isReducedMotionEnabled } = useReducedMotion();
 
   useEffect(() => {
+    if (isReducedMotionEnabled) {
+      return;
+    }
+
     const interval = setInterval(() => {
       setShowSparkle(!showSparkle);
       setColor(`#${Math.floor(Math.random() * 16777215).toString(16)}`);
     }, timeout);
 
     return () => clearInterval(interval);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [isReducedMotionEnabled, showSparkle, timeout]);
 
   if (!showSparkle) {
     return null;
   }
+
   return (
     <svg
       className="react-sparkly-text__sparkle-svg-x"
@@ -51,14 +59,10 @@ const SparkleSVG = ({ size, timeout = 1000 }: SparkleSVGProps) => {
 };
 
 export const ReactSparklyText = ({ children, size = DEFAULT_SIZE }: Props) => {
-  const generateRandomTimeout = () =>
-    Math.floor(Math.random() * (3200 - 2200) + 2200);
+  const generateRandomTimeout = () => Math.floor(Math.random() * (3200 - 2200) + 2200);
 
   return (
-    <span
-      className="react-sparkly-text__container-x"
-      data-testid={`react-sparkly-text-${Date.now()}`}
-    >
+    <span className="react-sparkly-text__container-x" data-testid={`react-sparkly-text-${Date.now()}`}>
       {children}
       <SparkleSVG size={size} />
       <SparkleSVG size={size} timeout={generateRandomTimeout()} />
