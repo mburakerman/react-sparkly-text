@@ -1,6 +1,6 @@
 {
   "name": "react-sparkly-text",
-  "version": "0.0.32",
+  "version": "0.0.33",
   "author": "mburakerman",
   "type": "module",
   "types": "build/index.d.ts",
@@ -16,6 +16,13 @@
     "url": "https://github.com/mburakerman/react-sparkly-text/issues"
   },
   "homepage": "https://github.com/mburakerman/react-sparkly-text",
+  "keywords": [
+    "sparkle",
+    "react-sparkle",
+    "react-sparkly-text",
+    "sparkly",
+    "react-sparkly"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

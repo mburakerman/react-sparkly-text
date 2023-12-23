@@ -3,7 +3,6 @@
 <br />
 
 [![NPM](https://img.shields.io/npm/v/react-sparkly-text)](https://www.npmjs.com/package/react-sparkly-text)
-![NPM License](https://img.shields.io/npm/l/react-sparkly-text)
 
 ## ⏬ Install
 
