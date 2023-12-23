@@ -13,11 +13,11 @@ npm i react-sparkly-text
 ## 🪡 Usage
 
 ```js
-import { ReactSparklyText } from "react-sparkly-text";
+import { ReactSparklyText } from "react-sparkly-text"
 ```
 
 ```html
- <p>Lorem ipsum dolor <ReactSparklyText>sparkly text</ReactplosiveModal> sit amet.</p>
+<p>Lorem ipsum dolor <ReactSparklyText>sparkly text</ReactSparklyText> sit amet.</p>
 ```
 
 ## ⚙️ Props
