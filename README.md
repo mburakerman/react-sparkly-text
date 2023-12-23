@@ -34,3 +34,7 @@ type Props = {
 ## ©️ License
 
 Licensed under MIT
+
+## ✨ Inspired From
+
+🙏🏼 Thanks for inspiration: https://github.com/stefanjudis/sparkly-text-
