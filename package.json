@@ -1,11 +1,18 @@
 {
   "name": "react-sparkly-text",
-  "version": "0.0.37",
+  "version": "0.0.38",
   "author": "mburakerman",
   "type": "module",
   "types": "build/ReactSparklyText.d.ts",
   "module": "build/ReactSparklyText.mjs",
   "main": "build/ReactSparklyText.js",
+  "exports": {
+    ".": {
+      "types": "./build/ReactSparklyText.d.ts",
+      "import": "./build/ReactSparklyText.mjs",
+      "require": "./build/ReactSparklyText.js"
+    }
+  },
   "files": [
     "build/"
   ],
