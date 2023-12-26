@@ -1,11 +1,10 @@
 {
   "name": "react-sparkly-text",
-  "version": "0.0.39",
+  "version": "0.0.40",
   "author": "mburakerman",
   "type": "module",
-  "types": "./build/ReactSparklyText.d.ts",
-  "module": "./build/ReactSparklyText.mjs",
-  "main": "./build/ReactSparklyText.js",
+  "types": "/build/ReactSparklyText.d.ts",
+  "main": "/build/ReactSparklyText.js",
   "files": [
     "build/"
   ],
@@ -33,7 +32,7 @@
     "build-storybook": "storybook build -o ./docs/storybook && touch ./docs/.nojekyll",
     "test": "vitest run",
     "test:watch": "vitest",
-    "build:package": "tsup src/components/ReactSparklyText/ReactSparklyText.tsx --format esm,cjs --dts --outDir build",
+    "build:package": "tsup src/components/ReactSparklyText/ReactSparklyText.tsx --format esm --dts --outDir build",
     "build:docs": "yarn build && yarn build-storybook",
     "build:all": "yarn build:package && yarn build:docs"
   },
